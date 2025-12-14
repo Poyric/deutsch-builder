@@ -13,6 +13,7 @@ const slides = [
     desc: 'İhtiyacınız olan kelimeleri görseller yardımıyla kolayca öğrenin.',
     imageIcon: '🤔', 
     imageTitle: 'confuse',
+    imageGerman: 'verwirren',
     imageSub: 'kafa karıştırmak'
   },
   {
@@ -21,6 +22,7 @@ const slides = [
     desc: 'Quiz ve testlerle kendinizi değerlendirip öğrendiklerinizi pekiştirin.',
     imageIcon: '🔊',
     imageTitle: 'abuse',
+    imageGerman: 'missbrauchen',
     imageSub: 'kötüye kullanmak'
   },
   {
@@ -29,6 +31,7 @@ const slides = [
     desc: 'Yanlış cevapladığınız kelimelere anında göz atın, isterseniz zor kelimelere odaklanın.',
     imageIcon: '🏃',
     imageTitle: 'overcome',
+    imageGerman: 'überwinden',
     imageSub: 'yenmek, üstesinden gelmek'
   },
   {
@@ -37,6 +40,7 @@ const slides = [
     desc: 'Zorlandığınız kelimeleri zamanlanmış bildirimlerle daha kolay öğrenin.',
     imageIcon: '🍎',
     imageTitle: 'decompose',
+    imageGerman: 'zersetzen',
     imageSub: 'çürümek, ayrışmak'
   }
 ];
@@ -65,7 +69,8 @@ const Onboarding: React.FC<OnboardingProps> = ({ onComplete }) => {
         <div className="bg-white rounded-full w-64 h-64 md:w-80 md:h-80 flex flex-col items-center justify-center text-gray-800 shadow-2xl relative overflow-hidden">
              {/* Mock Content inside circle based on slide */}
              <div className="text-center p-4">
-                <h3 className="text-2xl font-bold mb-1">{currentSlide.imageTitle}</h3>
+                <h3 className="text-sm font-bold text-gray-400 uppercase tracking-widest mb-1">{currentSlide.imageGerman}</h3>
+                <h2 className="text-2xl font-bold mb-1 text-gray-800">{currentSlide.imageTitle}</h2>
                 <p className="text-sm text-gray-500 mb-4">{currentSlide.imageSub}</p>
                 <div className="text-6xl animate-bounce">{currentSlide.imageIcon}</div>
              </div>

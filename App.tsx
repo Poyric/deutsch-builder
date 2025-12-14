@@ -32,7 +32,10 @@ const App: React.FC = () => {
       )}
       
       {view === 'dashboard' && (
-        <Dashboard onStartLive={() => setView('live-chat')} />
+        <Dashboard 
+            user={user} 
+            onStartLive={() => setView('live-chat')} 
+        />
       )}
 
       {view === 'live-chat' && (

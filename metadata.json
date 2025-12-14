@@ -1,0 +1,8 @@
+{
+  "name": "Deutsch Builder",
+  "description": "Almanca kelimeleri görseller, sesli sohbet ve akıllı tekrarlarla öğrenin.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
